@@ -1,4 +1,6 @@
-Nice, JB — here’s your README with the **GitHub link inserted** and formatting cleaned up. Paste this **top-to-bottom** into `README.md`:
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
 ```markdown
 # Blockchain CTF — Windows-Only (Stego → Base64 → SHA-3-256 → AES-256-CBC)
@@ -268,4 +270,6 @@ MIT © Jahson Jno-Baptiste
 
 If those three SHA-256 hashes differ from what you computed locally, paste the correct values here and I’ll swap them in.
 ```
-
+# Security Policy
+This repo is an educational CTF. It does not run in production and contains no reported vulnerabilities.
+Please do not submit vulnerability reports; instead open a discussion if you spot a documentation error.
