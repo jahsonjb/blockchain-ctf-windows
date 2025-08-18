@@ -254,3 +254,14 @@ MIT © Jahson Jno-Baptiste
 
 If those three SHA-256 hashes differ from what you computed locally, paste the correct values here and I’ll swap them in.
 ```
+
+## Figures (Essentials)
+
+![Figure 1 — C:\CTF start state with stego PNGs](report-assets/01_CTF_Folder.png)
+![Figure 10 — Block 1 extract (1.txt) in OpenStego](report-assets/10_Block1_OpenStego_Extract.png)
+![Figure 11 — Base64 decode of 1.txt → Cyb3rCh4ll3ng3](report-assets/11_Block1_Base64_Decode.png)
+![Figure 12 — Block 2 extract (2.txt) in OpenStego](report-assets/12_Block2_OpenStego_Extract.png)
+![Figure 13 — SHA3-256(ZeroTrust) digest in CyberChef](report-assets/13_Block2_SHA3_Digest.png)
+![Figure 14 — Block 3 extract (3.enc) in OpenStego](report-assets/14_Block3_OpenStego_Extract.png)
+![Figure 15 — AES Decrypt in CyberChef → flag](report-assets/15_Block3_AES_Decrypt.png)
+![Figure 17 — C:\CTF final state (inputs + outputs)](report-assets/17_CTF_Folder_Final.png)
