@@ -223,15 +223,29 @@ Get-FileHash .\SecPlus3.png -Algorithm SHA256
 
 ---
 
-## Suggested Screenshot Map
+## Suggested Screenshot Map (Essentials)
 
-* `01_CTF_Folder.png` — Explorer view showing `SecPlus1.png`, `SecPlus2.png`, `SecPlus3.png`
-* `02_Block1_Extract.png` — OpenStego Data Extraction for Block 1
-* `03_Block1_Base64.png` — PowerShell Base64 decode → `Cyb3rCh4ll3ng3`
-* `04_Block2_Extract.png` — OpenStego Data Extraction for Block 2
-* `05_Block2_SHA3.png` — CyberChef SHA-3-256 of `ZeroTrust` with the hex digest visible
-* `06_Block3_Extract.png` — OpenStego Data Extraction for Block 3
-* `07_Block3_AES_Decrypt.png` — CyberChef AES Decrypt (CBC, Key/IV Hex, PKCS7) showing the flag
+- `01_CTF_Folder.png` — Explorer at `C:\CTF` showing stego PNGs (`SecPlus1/2/3.png`)
+- `10_Block1_OpenStego_Extract.png` — OpenStego Data Extraction (Block 1 → `1.txt`)
+- `11_Block1_Base64_Decode.png` — PowerShell Base64 decode of `1.txt` → `Cyb3rCh4ll3ng3`
+- `12_Block2_OpenStego_Extract.png` — OpenStego Data Extraction (Block 2 → `2.txt`)
+- `13_Block2_SHA3_Digest.png` — CyberChef `SHA3-256("ZeroTrust")` hex digest
+- `14_Block3_OpenStego_Extract.png` — OpenStego Data Extraction (Block 3 → ciphertext `3.enc`)
+- `15_Block3_AES_Decrypt.png` — CyberChef AES Decrypt (CBC; Key/IV Hex; PKCS7) showing the flag
+- `17_CTF_Folder_Final.png` — Final `C:\CTF` state (inputs + outputs: PNGs, `1.txt`, `2.txt`, `3.enc`, `flag.txt`)
+
+## Figures (Essentials)
+
+![Figure 1 — C:\CTF start state with stego PNGs](report-assets/01_CTF_Folder.png)
+![Figure 2 — Block 1 extract (1.txt) in OpenStego](report-assets/10_Block1_OpenStego_Extract.png)
+![Figure 3 — Base64 decode of 1.txt → Cyb3rCh4ll3ng3](report-assets/11_Block1_Base64_Decode.png)
+![Figure 4 — Block 2 extract (2.txt) in OpenStego](report-assets/12_Block2_OpenStego_Extract.png)
+![Figure 5 — SHA3-256(ZeroTrust) digest in CyberChef](report-assets/13_Block2_SHA3_Digest.png)
+![Figure 6 — Block 3 extract (3.enc) in OpenStego](report-assets/14_Block3_OpenStego_Extract.png)
+![Figure 7 — AES Decrypt in CyberChef → flag](report-assets/15_Block3_AES_Decrypt.png)
+![Figure 8 — Final folder (inputs + outputs)](report-assets/17_CTF_Folder_Final.png)
+
+
 
 Use short captions and (optionally) redact password fields in screenshots.
 
@@ -255,13 +269,3 @@ MIT © Jahson Jno-Baptiste
 If those three SHA-256 hashes differ from what you computed locally, paste the correct values here and I’ll swap them in.
 ```
 
-## Figures (Essentials)
-
-![Figure 1 — C:\CTF start state with stego PNGs](report-assets/01_CTF_Folder.png)
-![Figure 10 — Block 1 extract (1.txt) in OpenStego](report-assets/10_Block1_OpenStego_Extract.png)
-![Figure 11 — Base64 decode of 1.txt → Cyb3rCh4ll3ng3](report-assets/11_Block1_Base64_Decode.png)
-![Figure 12 — Block 2 extract (2.txt) in OpenStego](report-assets/12_Block2_OpenStego_Extract.png)
-![Figure 13 — SHA3-256(ZeroTrust) digest in CyberChef](report-assets/13_Block2_SHA3_Digest.png)
-![Figure 14 — Block 3 extract (3.enc) in OpenStego](report-assets/14_Block3_OpenStego_Extract.png)
-![Figure 15 — AES Decrypt in CyberChef → flag](report-assets/15_Block3_AES_Decrypt.png)
-![Figure 17 — C:\CTF final state (inputs + outputs)](report-assets/17_CTF_Folder_Final.png)
