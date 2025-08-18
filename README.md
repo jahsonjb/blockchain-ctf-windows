@@ -270,6 +270,3 @@ MIT © Jahson Jno-Baptiste
 
 If those three SHA-256 hashes differ from what you computed locally, paste the correct values here and I’ll swap them in.
 ```
-# Security Policy
-This repo is an educational CTF. It does not run in production and contains no reported vulnerabilities.
-Please do not submit vulnerability reports; instead open a discussion if you spot a documentation error.
