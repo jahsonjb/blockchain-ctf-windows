@@ -1,0 +1,3 @@
+Generate a SHA3-256 hash of the phrase: ZeroTrust
+Use the 32-byte hex digest as the AES-256 key for Block 3.
+IV is all zero bytes (16 bytes = 32 hex zeros) for this challenge.
